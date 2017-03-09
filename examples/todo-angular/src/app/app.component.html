@@ -1,0 +1,9 @@
+<h1>
+  {{title}}
+</h1>
+<form (ngSubmit)="onSubmit(todoForm)" #todoForm="ngForm">
+  <input type="text" name="todo" placeholder="Add a todo..." [(ngModel)]="form.todo">
+  <button type="submit">+</button>
+</form>
+<app-todo-filter></app-todo-filter>
+<app-todo-list></app-todo-list>

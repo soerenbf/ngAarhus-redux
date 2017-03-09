@@ -1,0 +1,5 @@
+<div class="todo-filter">
+  <button *ngFor="let filter of ['ALL', 'ACTIVE', 'COMPLETED']"
+          (click)="updateFilter(filter)"
+          [ngClass]="{ 'active': (activeFilter$ | async) === filter }">{{ filter }}</button>
+</div>

@@ -1,0 +1,15 @@
+.todo-filter {
+    margin-top: 10px;
+}
+
+button {
+    border: none;
+    border-radius: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+button.active {
+    border-bottom: 1px solid black;
+}

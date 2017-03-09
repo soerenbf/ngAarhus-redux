@@ -1,0 +1,37 @@
+.filter {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+        display: inline-block;
+    }
+
+    li {
+        display: inline-block;
+        padding-bottom: 5px;
+        margin: 0 5px;
+        cursor: pointer;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &.active {
+            border-bottom: 2px solid black;
+        }
+    }
+}
+
+.todo-list {
+    li {
+        cursor: pointer;
+
+        &.completed {
+            text-decoration: line-through;
+        }
+    }
+}

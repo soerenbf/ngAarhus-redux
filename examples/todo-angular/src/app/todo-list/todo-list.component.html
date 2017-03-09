@@ -1,0 +1,7 @@
+<div>
+  <ul>
+    <li *ngFor="let todo of todos$ | async | filterBy:(activeFilter$ | async)" 
+        (click)="toggleCompleted(todo.id)"
+        [ngClass]="{ 'completed': todo.isCompleted }">{{ todo.title }}</li>
+  </ul>
+</div>
