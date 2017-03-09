@@ -1,5 +1,6 @@
 *.docx
 *.pdf
+!redux-FE-meetup_en.pdf
 ~$*
 node_modules
 dist
