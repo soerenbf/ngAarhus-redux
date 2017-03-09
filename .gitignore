@@ -1,0 +1,5 @@
+*.docx
+*.pdf
+~$*
+node_modules
+dist
